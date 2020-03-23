@@ -3,15 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'checkstyle'
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
-
-shadowJar {
-    manifest {
-        attributes ('Main-Class': 'run.halo.app.Application')
-    }
-}
-
 
 group = 'run.halo.app'
 version = '1.3.0-beta.3'
